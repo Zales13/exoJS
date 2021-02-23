@@ -21,14 +21,25 @@ Cree une fonction add (string)
 function add(numberToAdd) {
     console.log('value of "numberToAdd":' + numberToAdd);
 
+    const numbers = numberToAdd.split(',');
+    console.log('value of "numbers": ', numbers);
+
+
      if (numberToAdd === '') {
     return '0';
 }
+    else {
+        if (numbers.length > 1) {
+        return numbers.reduce((acc, current) => acc += parseInt(current, 10), 0);
+        }
+  
+
      else {
     return numberToAdd;
+ }   
+}
 }
 
-}
 
 const result = add('1,2');
 
