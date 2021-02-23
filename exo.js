@@ -12,9 +12,24 @@ console.log((number1 + number2).toString());
 
 /* Second step 
 Cree une fonction add (string)
- - cette methode peux prendre 0, 1 ou 2 nombres separated by comma, and returns their sum.
+ - cette methode peux prendre 0, 1 ou 2 nombres separé par une virgule, et retourne la somme.
  - An empty string will return "0".
  - Example of inputs "", "1", "1.1,2.2".
  - The results of this addition "1.1,2.2" need to be "3.3" /!\
  */
 
+function add(numberToAdd) {
+    console.log('value of "numberToAdd":' + numberToAdd);
+
+     if (numberToAdd === '') {
+    return '0';
+}
+     else {
+    return numberToAdd;
+}
+
+}
+
+const result = add('1,2');
+
+console.log('result: ' + result);
