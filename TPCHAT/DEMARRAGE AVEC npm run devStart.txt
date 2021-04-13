@@ -1,0 +1,1 @@
+installer avec npm i --save-dev nodemon
